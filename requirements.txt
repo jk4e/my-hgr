@@ -1,0 +1,6 @@
+streamlit
+ultralytics
+mediapipe
+plotly
+numpy
+pandas
