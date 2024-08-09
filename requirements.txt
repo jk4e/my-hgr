@@ -1,6 +1,7 @@
 streamlit
 ultralytics
 mediapipe
+opencv-python
 plotly
 numpy
 pandas
