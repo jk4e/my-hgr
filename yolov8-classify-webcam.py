@@ -11,7 +11,6 @@ import numpy as np
 import content
 import utils
 
-
 # Sidebar
 model_path = utils.yolo_classify_sidebar_options()
 

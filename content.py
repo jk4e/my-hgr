@@ -201,6 +201,10 @@ def content_yolov8_classify_webcam() -> None:
     # :rainbow[_YOLOv8_]🚀 Hand Classification Webcam📷  
     Author: [jk4e](https://github.com/jk4e) | Last Update: August 2024 
     """
+    st.error(
+        "!! This Demo is not working/supported in WebApp. Unable to access users webcam feeds with Streamlit and opencv on Community Cloud   !!",
+        icon="🚨",
+    )
     preview_warning()
     st.markdown(md_content)
     st.warning(
@@ -257,6 +261,10 @@ def content_yolov8_detect_webcam() -> None:
     # :rainbow[_YOLOv8_]🚀 Hand Detection Webcam Video🖐️  
     Author: [jk4e](https://github.com/jk4e) | Last Update: August 2024  
     """
+    st.error(
+        "!! This Demo is not working/supported in WebApp. Unable to access users webcam feeds with Streamlit and opencv on Community Cloud  !!",
+        icon="🚨",
+    )
     preview_warning()
     st.markdown(md_content)
     st.warning(
