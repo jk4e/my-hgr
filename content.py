@@ -202,7 +202,7 @@ def content_yolov8_classify_webcam() -> None:
     Author: [jk4e](https://github.com/jk4e) | Last Update: August 2024 
     """
     st.error(
-        "!! This Demo is not working/supported in WebApp. Unable to access users webcam feeds with Streamlit and opencv on Community Cloud   !!",
+        "!! This Demo is not working/supported in WebApp. Unable to access users webcam feeds with Streamlit and OpenCV on Community Cloud   !!",
         icon="🚨",
     )
     preview_warning()
@@ -220,7 +220,7 @@ def content_yolov8_classify_webcam() -> None:
 
 
 # -- YOLOv8 Detect Page -- #
-def content_yolov8_detect() -> None:
+def content_yolov8_detect() -> None:O
     md_content = """
     # :rainbow[_YOLOv8_]🚀 Hand Detection🖐️  
     Author: [jk4e](https://github.com/jk4e) | Last Update: August 2024  
@@ -262,7 +262,7 @@ def content_yolov8_detect_webcam() -> None:
     Author: [jk4e](https://github.com/jk4e) | Last Update: August 2024  
     """
     st.error(
-        "!! This Demo is not working/supported in WebApp. Unable to access users webcam feeds with Streamlit and opencv on Community Cloud  !!",
+        "!! This Demo is not working/supported in WebApp. Unable to access users webcam feeds with Streamlit and OpenCV on Community Cloud  !!",
         icon="🚨",
     )
     preview_warning()
@@ -321,6 +321,10 @@ def content_mediapipe_hgr_task_webcam() -> None:
     # :rainbow[_MediaPipe_]🚀 HGR Webcam🖐️  
     Author: [jk4e](https://github.com/jk4e) | Last Update: August 2024  
     """
+    st.error(
+        "!! This Demo is not working/supported in WebApp. Unable to access users webcam feeds with Streamlit and OpenCV on Community Cloud  !!",
+        icon="🚨",
+    )
     preview_warning()
     st.markdown(md_content)
     st.divider()

@@ -24,6 +24,9 @@ Have fun exploring!
 - Custom YOLOv8 classification model for hand classification task (HGR)
 - Custom MediaPipe hand gesture recognition task (HGR)
 
+Note on Webcam Support for Video Stream:  
+Webcam real-time video stream is not yet supported on the WebApp. This functionality is not natively possible on Streamlit Cloud, and would require a custom component such as [`streamlit-webrtc`](https://github.com/whitphx/streamlit-webrtc). Currently, there is no fast and easy way to integrate local webcam streams in the WebApp. (see [1](https://discuss.streamlit.io/t/opencv-webcam-feed-running-on-streamlit-isnt-showing-output/40663), [2](https://discuss.streamlit.io/t/unable-to-import-cv2/22942/13), [3](https://discuss.streamlit.io/t/unable-to-view-integrated-webcam-window/44153))
+
 ## Streamlit WebApp [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://my-hgr.streamlit.app)
 
 Streamlit app (**M**ediapipe**Y**olo-**HGR**) with MediaPipe and YOLOv8 hand gesture recognition demos using custom trained models. The Streamlit Community Cloud is used to deploy the app.

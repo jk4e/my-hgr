@@ -66,10 +66,6 @@ if img_file_buffer is not None:
     # Run inference
     recognition_result = recognizer.recognize(mp_image)
 
-    # Display input image in column 1
-    with col1:
-        st.image(image_np, caption="Input Image", use_column_width=True)
-
     # Display annotated image in column 2
     with col2:
         st.markdown("## Annotated Image")
