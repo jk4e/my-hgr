@@ -28,11 +28,10 @@ content.content_yolov8_classify_video()
 video_path = utils.video_selector()
 
 
-def process_video(video_path):
+def process_video(video_path, model):
     cap = cv2.VideoCapture(video_path)
     frames = []
     results = []
-
     while cap.isOpened():
         ret, frame = cap.read()
         if not ret:
@@ -40,14 +39,19 @@ def process_video(video_path):
         frames.append(frame)
         result = model.predict(frame)[0]
         results.append(result)
-
     cap.release()
     return frames, results
 
 
+@st.cache_data
+def cached_process_video(video_path, model_path):
+    model = YOLO(model_path)
+    return process_video(video_path, model)
+
+
 # Process video<
 with st.spinner("Processing video..."):
-    frames, results = process_video(video_path)
+    frames, results = cached_process_video(video_path, model_path)
 
 # Display results
 if frames and results:

@@ -14,7 +14,7 @@ def preview_warning() -> None:
 def content_home() -> None:
     md_content = """
     # :rainbow[Custom Hand Gesture Recognition Models (HGR)]🖐️ with :rainbow[_YOLOv8_]🚀 and :rainbow[_MediaPipe_]👋
-    Author: [jk4e](https://github.com/jk4e) | Last Update: 2024-08
+    Author: [jk4e](https://github.com/jk4e) | Last Update: August 2024
 
     ## Introduction
     This is a collection of demos as a Streamlit app showcasing the capabilities of custom-trained HGR models on freely available SDKs and frameworks for various HGR tasks. Select a model configuration from the sidebar to try out the different models and tasks.
@@ -147,7 +147,7 @@ def content_home() -> None:
 def content_yolov8_classify() -> None:
     md_content = """
     # :rainbow[_YOLOv8_]🚀 Hand Classification🖐️
-    Author: [jk4e](https://github.com/jk4e) | Last Update: 2024-08  
+    Author: [jk4e](https://github.com/jk4e) | Last Update: August 2024  
     """
     preview_warning()
     st.markdown(md_content)
@@ -159,7 +159,7 @@ def content_yolov8_classify() -> None:
 def content_yolov8_classify_photo() -> None:
     md_content = """
     # :rainbow[_YOLOv8_]🚀 Hand Classification Photo (Webcam)🖐️
-    Author: [jk4e](https://github.com/jk4e) | Last Update: 2024-08  
+    Author: [jk4e](https://github.com/jk4e) | Last Update: August 2024  
     """
     preview_warning()
     st.markdown(md_content)
@@ -171,7 +171,7 @@ def content_yolov8_classify_photo() -> None:
 def content_yolov8_classify_video() -> None:
     md_content = """
     # :rainbow[_YOLOv8_]🚀 Hand Classification Video🖐️
-    Author: [jk4e](https://github.com/jk4e) | Last Update: 2024-08  
+    Author: [jk4e](https://github.com/jk4e) | Last Update: August 2024  
     """
     preview_warning()
     st.markdown(md_content)
@@ -183,7 +183,7 @@ def content_yolov8_classify_video() -> None:
 def content_yolov8_classify_video_realtime() -> None:
     md_content = """
     # :rainbow[_YOLOv8_]🚀 Hand Classification Video with Real-Time Processing🖐️  
-    Author: [jk4e](https://github.com/jk4e) | Last Update: 2024-08  
+    Author: [jk4e](https://github.com/jk4e) | Last Update: August 2024  
     """
     preview_warning()
     st.markdown(md_content)
@@ -199,7 +199,7 @@ def content_yolov8_classify_video_realtime() -> None:
 def content_yolov8_classify_webcam() -> None:
     md_content = """
     # :rainbow[_YOLOv8_]🚀 Hand Classification Webcam📷  
-    Author: [jk4e](https://github.com/jk4e) | Last Update: 2024-08 
+    Author: [jk4e](https://github.com/jk4e) | Last Update: August 2024 
     """
     preview_warning()
     st.markdown(md_content)
@@ -219,7 +219,7 @@ def content_yolov8_classify_webcam() -> None:
 def content_yolov8_detect() -> None:
     md_content = """
     # :rainbow[_YOLOv8_]🚀 Hand Detection🖐️  
-    Author: [jk4e](https://github.com/jk4e) | Last Update: 2024-08  
+    Author: [jk4e](https://github.com/jk4e) | Last Update: August 2024  
     """
     preview_warning()
     st.markdown(md_content)
@@ -231,7 +231,7 @@ def content_yolov8_detect() -> None:
 def content_yolov8_detect_photo() -> None:
     md_content = """
     # :rainbow[_YOLOv8_]🚀 Hand Detection Photo🖐️   
-    Author: [jk4e](https://github.com/jk4e) | Last Update: 2024-08  
+    Author: [jk4e](https://github.com/jk4e) | Last Update: August 2024  
     """
     preview_warning()
     st.markdown(md_content)
@@ -243,7 +243,7 @@ def content_yolov8_detect_photo() -> None:
 def content_yolov8_detect_video() -> None:
     md_content = """
     # :rainbow[_YOLOv8_]🚀 Hand Detection Video🖐️   
-    Author: [jk4e](https://github.com/jk4e) | Last Update: 2024-08  
+    Author: [jk4e](https://github.com/jk4e) | Last Update: August 2024  
     """
     preview_warning()
     st.markdown(md_content)
@@ -255,7 +255,7 @@ def content_yolov8_detect_video() -> None:
 def content_yolov8_detect_webcam() -> None:
     md_content = """
     # :rainbow[_YOLOv8_]🚀 Hand Detection Webcam Video🖐️  
-    Author: [jk4e](https://github.com/jk4e) | Last Update: 2024-08  
+    Author: [jk4e](https://github.com/jk4e) | Last Update: August 2024  
     """
     preview_warning()
     st.markdown(md_content)
@@ -275,7 +275,7 @@ def content_yolov8_detect_webcam() -> None:
 def content_mediapipe_hgr_task() -> None:
     md_content = """
     # :rainbow[_MediaPipe_]🚀 Hand Gesture Recognition (HGR)🖐️  
-    Author: [jk4e](https://github.com/jk4e) | Last Update: 2024-08  
+    Author: [jk4e](https://github.com/jk4e) | Last Update: August 2024  
     """
     preview_warning()
     st.markdown(md_content)
@@ -287,7 +287,7 @@ def content_mediapipe_hgr_task() -> None:
 def content_mediapipe_hgr_task_photo() -> None:
     md_content = """
     # :rainbow[_MediaPipe_]🚀 HGR Photo 🖐️  
-    Author: [jk4e](https://github.com/jk4e) | Last Update: 2024-08  
+    Author: [jk4e](https://github.com/jk4e) | Last Update: August 2024  
     """
     preview_warning()
     st.markdown(md_content)
@@ -299,7 +299,7 @@ def content_mediapipe_hgr_task_photo() -> None:
 def content_mediapipe_hgr_task_video() -> None:
     md_content = """
     # :rainbow[_MediaPipe_]🚀 HGR Video🖐️  
-    Author: [jk4e](https://github.com/jk4e) | Last Update: 2024-08  
+    Author: [jk4e](https://github.com/jk4e) | Last Update: August 2024  
     """
     preview_warning()
     st.markdown(md_content)
@@ -311,7 +311,7 @@ def content_mediapipe_hgr_task_video() -> None:
 def content_mediapipe_hgr_task_webcam() -> None:
     md_content = """
     # :rainbow[_MediaPipe_]🚀 HGR Webcam🖐️  
-    Author: [jk4e](https://github.com/jk4e) | Last Update: 2024-08  
+    Author: [jk4e](https://github.com/jk4e) | Last Update: August 2024  
     """
     preview_warning()
     st.markdown(md_content)
