@@ -220,7 +220,7 @@ def content_yolov8_classify_webcam() -> None:
 
 
 # -- YOLOv8 Detect Page -- #
-def content_yolov8_detect() -> None:O
+def content_yolov8_detect() -> None:
     md_content = """
     # :rainbow[_YOLOv8_]🚀 Hand Detection🖐️  
     Author: [jk4e](https://github.com/jk4e) | Last Update: August 2024  
