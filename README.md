@@ -103,7 +103,7 @@ This app is deployed on [Streamlit Community Cloud](https://streamlit.io/cloud),
 - [Gesture recognition task guide](https://ai.google.dev/edge/mediapipe/solutions/vision/gesture_recognizer)
 - [Hand gesture recognition model customization guide](https://ai.google.dev/edge/mediapipe/solutions/customization/gesture_recognizer)
 
-#### ⚠️ Important Note on MediaPipe Model Maker Installation
+### ⚠️ Important Note on MediaPipe Model Maker Installation
 
 As of August 2024:
 
