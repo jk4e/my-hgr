@@ -37,6 +37,7 @@ def image_selector() -> str:
         "ai-hand4.jpg",
         "ai-hand5.jpg",
         "ai-hand6.jpg",
+        "ai-hand7.jpeg",
         "background1.jpg",
         "background2.jpg",
         "background3.jpg",
@@ -116,8 +117,7 @@ def yolo_classify_sidebar_options() -> tuple:
             "ASL Count✔️",
             "ASL Alphabet✔️",
             "HaGRID✔️",
-            "Hand✔️",
-            "AI trained❌",
+            "Hands✔️",
         ],
     )
 
@@ -127,8 +127,7 @@ def yolo_classify_sidebar_options() -> tuple:
         "ASL Count✔️": "models/asl_count_classify.pt",
         "ASL Alphabet✔️": "models/asl_alphabet_classify.pt",
         "HaGRID✔️": "models/hagrid_classify.pt",
-        "Hand✔️": "models/hand_classify.pt",
-        "AI trained❌": "",
+        "Hands✔️": "models/hand_classify.pt",
     }
     model_path = model_paths[model_type]
 
@@ -149,11 +148,10 @@ def yolo_detect_sidebar_options() -> tuple:
         "Model (more ℹ️ see Home)",
         [
             "RPS✔️",
-            "ASL Count❌",
             "ASL Alphabet✔️",
-            "HaGRID❌",
-            "Common hand gestures❌",
-            "AI trained❌",
+            "AI Open Palm✔️",
+            "AI Hands✔️",
+            "AI Hands2✔️",
         ],
     )
     confidence = float(
@@ -169,11 +167,10 @@ def yolo_detect_sidebar_options() -> tuple:
     # Selecting model path based on model type
     model_paths = {
         "RPS✔️": "models/rps_detect.pt",
-        "ASL Count❌": "",
         "ASL Alphabet✔️": "models/asl_alphabet_detect.pt",
-        "HaGRID❌": "",
-        "Common hand gestures❌": "",
-        "AI trained❌": "",
+        "AI Open Palm✔️": "models/ai_open_palm_detect",
+        "AI Hands✔️": "models/ai_hands_detect.pt",
+        "AI Hands2✔️": "models/ai_hands2_detect.pt",
     }
     model_path = model_paths[model_type]
 

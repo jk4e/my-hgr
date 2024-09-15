@@ -80,32 +80,38 @@ def content_home() -> None:
     - **ASL Alphabet**: Letters, see [ASL/American manual alphabet]({asl_manual_link}) (Letters Z and J are not included because they require dynamic movements)
     - **Default**: Victory, Closed Fist, Thumbs Up, Thumbs Down, Open Palm, I Love you, Pointing Up (👍, 👎, ✌️, ☝️, ✊, 👋, 🤟)(common hand gestures)
     - **HaGRID**: see [HaGRID - HAnd Gesture Recognition Image Dataset](https://github.com/hukenovs/hagrid)
-    - **Hand**: detect if in imaga a hand is present or not
+    - **Hands**: detect if in imaga a hand is present or not
+    - **AI-Hand**: detect if in image a hand is present or not, trained on AI-generated images
+    - **AI Open Palm**: detect if in image an open palm 🖐️ is present or not, trained on AI-generated images 
 
 
     ## Model Information (TODO: Section is not yet complete)
     - Num. of Images: all images for model training. Include train, validation, and test sets.
 
     ### YOLOv8 Classify:
-    | Model    | Available| Test Accuracy | Model Input Shape | Pretrained on | Size (MB) | Num. of Images | Num. of Classes | None/Background class | Class names |
-    | -------- | -------- | ------------- | ----------------- | ------------- | --------- | ------------- | --------------- | --------------------- | ----------- |
-    | RPS      | ✔️       | -             | (1, 3, 224, 224)       |               |        |           | 4               | ✔️                   | `rock`, `paper`, `scissors`, `background`|
-    | ASL Count| ✔️       | -             | (1, 3, 224, 224)       |               |        |           | 11              | ✔️                   | `0`, `1`, `2`, `3`, `4`, `5`, `6`, `7`, `8`, `9`, `background`|
-    | ASL Alphabet| ✔️    | -             | (1, 3, 224, 224)       |               |        |           | 25              | ✔️                   | `A`, `B`, `C`, `D`, `E`, `F`, `G`, `H`, `I`, `K`, `L`, `M`, `N`, `O`, `P`, `Q`, `R`, `S`, `T`, `U`, `V`, `W`, `X`, `Y`, `background`|
+
+    | Model        | Available | Test Accuracy | Model Input Shape | Pretrained on | Size (MB) | Num. of Images | Num. of Classes | None/Background class | Class names |
+    | ------------ | --------- | ------------- | ----------------- | ------------- | --------- | ------------- | --------------- | --------------------- | ----------- |
+    | RPS          | ✔️        | -             | (1, 3, 224, 224)       |               |        |           | 4               | ✔️                   | `rock`, `paper`, `scissors`, `background`|
+    | ASL Count    | ✔️        | -             | (1, 3, 224, 224)       |               |        |           | 11              | ✔️                   | `0`, `1`, `2`, `3`, `4`, `5`, `6`, `7`, `8`, `9`, `background`|
+    | ASL Alphabet | ✔️        | -             | (1, 3, 224, 224)       |               |        |           | 25              | ✔️                   | `A`, `B`, `C`, `D`, `E`, `F`, `G`, `H`, `I`, `K`, `L`, `M`, `N`, `O`, `P`, `Q`, `R`, `S`, `T`, `U`, `V`, `W`, `X`, `Y`, `background`|
 
     ### YOLOv8 Detect:
 
+
+
+
+
+
     ### MediaPipe HGR Task:
-    | Model    | Available | Test Accuracy | Model Input Shape | Pretrained on | Size (MB) | Num. of Images | Num. of Classes | None/Background class | Class names |
-    | -------- | --------- | ------------- | ----------------- | ------------- | --------- | ------------- | --------------- | --------------------- | ----------- |
-    | RPS      | ✔️        | 0.90          | 224 x 224         | -             | 8.3       | 8,100          | 4               | ✔️                   | `rock`, `paper`, `scissors`, `none`|
-    | ASL Count| ✔️        | 0.98          | 224 x 224         | -             | 8.3       | 7,100          | 10              | ❌                   | `0`, `1`, `2`, `3`, `4`, `5`, `6`, `7`, `8`, `9`, `none`|
-    | ASL Alphabet| ✔️     | 0.96          | 224 x 224         | -             | 8.3       | 8,400          | 24              | ❌                   | `A`, `B`, `C`, `D`, `E`, `F`, `G`, `H`, `I`, `K`, `L`, `M`, `N`, `O`, `P`, `Q`, `R`, `S`, `T`, `U`, `V`, `W`, `X`, `Y`, `none`|
-    | Default*  | ✔️        | -             | 192 x 192, 224 x 224 | -          | 8.3       | 3000           | 8               | -                     | `Unknown`, `Closed_Fist`, `Open_Palm`, `Pointing_Up`, `Thumb_Down`, `Thumb_Up`, `Victory`, `ILoveYou`|
+    | Model       | Available | Test Accuracy | Model Input Shape    | Pretrained on | Size (MB) | Num. of Images | Num. of Classes | None/Background class | Class names                                                                                                                   |
+    | ----------- | --------- | ------------- | -------------------- | ------------- | --------- | -------------- | --------------- | --------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
+    | RPS         | ✔️        | 0.90          | 224 x 224            | -             | 8.3       | 8,100          | 4               | ✔️                   | `rock`, `paper`, `scissors`, `none`                                                                                           |
+    | ASL Count   | ✔️        | 0.98          | 224 x 224            | -             | 8.3       | 7,100          | 10              | ❌                   | `0`, `1`, `2`, `3`, `4`, `5`, `6`, `7`, `8`, `9`, `none`                                                                      |
+    | ASL Alphabet| ✔️        | 0.96          | 224 x 224            | -             | 8.3       | 8,400          | 24              | ❌                   | `A`, `B`, `C`, `D`, `E`, `F`, `G`, `H`, `I`, `K`, `L`, `M`, `N`, `O`, `P`, `Q`, `R`, `S`, `T`, `U`, `V`, `W`, `X`, `Y`, `none`|
+    | Default*    | ✔️        | -             | 192 x 192, 224 x 224 | -             | 8.3       | 30,000           | 8               | -                     | `Unknown`, `Closed_Fist`, `Open_Palm`, `Pointing_Up`, `Thumb_Down`, `Thumb_Up`, `Victory`, `ILoveYou`                         |
 
     *Default model is provided by MediaPipe (Model name: `HandGestureClassifier` or `Default` (in MP Studio )). For more information see [Model card for Hand Gesture Classification](https://storage.googleapis.com/mediapipe-assets/gesture_recognizer/model_card_hand_gesture_classification_with_faireness_2022.pdf)
-
-
 
     """
     st.markdown(md_models)
